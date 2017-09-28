@@ -26,27 +26,33 @@ header
   padding-top: 6em
 
   a.social
-    margin-right: 10px
+    margin-right: 1em
+    display: inline-block
+    img
+      transition: .5s
     &:hover
-      transform: scale(1.2)
+      img, svg
+        transform: scale(1.4)
+        transition: .5s
+        path
+          fill: #61D2B6
 
-      svg
-        fill: red
 
-  .logo-top
-    margin-bottom: 2em
+  .social-bucket
+    text-align: center
+    margin: 3em 0
     
   #green
     background-color: rgba(14, 24, 28, 0.79)
     padding: 3em
-    max-width: 875px
+    max-width: 715px
 
     @media (max-width: 500px)
       padding: 1em
 
     h1
       margin: 10px 0
-      font-size: 4em
+      font-size: 3.1em
       letter-spacing: -0.03rem
       line-height: 1.2em
 
